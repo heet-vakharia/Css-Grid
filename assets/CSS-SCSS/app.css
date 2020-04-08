@@ -1,0 +1,32 @@
+.container{
+
+  height:100px;
+  display:grid;
+  font-family:sans-serif;
+  font-size:30px;
+  grid-template-columns: repeat(3,1fr) 200px;
+  grid-template-rows: 100px 200px 400px 100px;
+}
+.item{
+  padding:30px;
+  background-color:red;
+  margin:10px;
+}
+.header{
+  grid-row:1 /2;
+  grid-column:1/5;
+}
+.small{
+ /*height: 200px;*/
+}
+.sidebar{
+  grid-row: 2/4;
+  grid-column:4/-1;
+}
+.main-content{
+  grid-column:1/4;
+  /*height:400px;*/
+}
+.footer{
+  grid-column:1/-1;
+}
